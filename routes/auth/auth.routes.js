@@ -44,6 +44,7 @@ router.get('/login', isLoggedOut, (req, res, next) => {
 router.post('/login', (req, res, next) => {
 
     const { email, userPwd } = req.body
+    console.log(userPwd)
 
     User
         .findOne({ email })

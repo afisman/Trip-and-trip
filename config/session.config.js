@@ -1,6 +1,7 @@
 const session = require('express-session')
 const MongoStore = require('connect-mongo')
 const mongoose = require('mongoose')
+require('dotenv')
 
 module.exports = app => {
     app.set('trust proxy', 1)
